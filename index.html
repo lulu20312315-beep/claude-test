@@ -54,10 +54,19 @@
     }
 
     .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       font-size: 0.92rem;
       font-weight: 600;
       color: var(--text-primary);
       letter-spacing: -0.3px;
+    }
+
+    .nav-logo img {
+      height: 20px;
+      width: auto;
+      opacity: 0.85;
     }
 
     .nav-links {
@@ -160,6 +169,45 @@
     .hero-tagline strong {
       color: var(--text-primary);
       font-weight: 500;
+    }
+
+    .hero-dept {
+      font-size: clamp(1rem, 2.5vw, 1.6rem);
+      font-weight: 400;
+      color: var(--text-secondary);
+      letter-spacing: -0.5px;
+      vertical-align: middle;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .expert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: -0.1px;
+      border: 1px solid;
+    }
+
+    .badge-food {
+      background: rgba(234, 88, 12, 0.07);
+      color: #C2410C;
+      border-color: rgba(234, 88, 12, 0.2);
+    }
+
+    .badge-hrd {
+      background: rgba(0, 113, 227, 0.07);
+      color: #0057B3;
+      border-color: rgba(0, 113, 227, 0.2);
     }
 
     .hero-cta {
@@ -342,6 +390,18 @@
       letter-spacing: -0.5px;
       color: var(--text-primary);
       margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .company-logo {
+      height: 28px;
+      width: auto;
+      object-fit: contain;
+      vertical-align: middle;
+      opacity: 0.88;
     }
 
     .timeline-role {
@@ -458,7 +518,10 @@
 <!-- Nav -->
 <nav>
   <div class="nav-inner">
-    <span class="nav-logo">김연주</span>
+    <span class="nav-logo">
+      <img src="다이닝브랜즈그룹 png.png" alt="다이닝브랜즈그룹">
+      김연주
+    </span>
     <ul class="nav-links">
       <li><a href="#about">소개</a></li>
       <li><a href="#career">경력</a></li>
@@ -472,7 +535,11 @@
   <div class="hero-inner">
     <div class="hero-content">
       <p class="hero-label">Personal Introduction</p>
-      <h1 class="hero-name">김연주</h1>
+      <h1 class="hero-name">김연주 <span class="hero-dept">인재육성팀</span></h1>
+      <div class="hero-badges">
+        <span class="expert-badge badge-food">🍽 외식 전문가</span>
+        <span class="expert-badge badge-hrd">📚 HRD 전문가</span>
+      </div>
       <p class="hero-tagline">
         외식업계의 현장부터 교육, 브랜드 경영까지<br>
         <strong>26년</strong>의 깊이 있는 커리어를 쌓아온<br>
@@ -527,7 +594,10 @@
     <div class="timeline-item current">
       <div class="timeline-dot"></div>
       <p class="timeline-period">현재 · 9년차</p>
-      <h3 class="timeline-company">다이닝브랜즈그룹 <span class="current-badge">재직 중</span></h3>
+      <h3 class="timeline-company">
+        <img class="company-logo" src="다이닝브랜즈그룹 png.png" alt="다이닝브랜즈그룹">
+        <span class="current-badge">재직 중</span>
+      </h3>
       <p class="timeline-role">외식 브랜드 경영 전문가</p>
       <p class="timeline-desc">
         다수의 외식 브랜드를 운영하는 다이닝브랜즈그룹에서 브랜드 경영 및 전략 업무를 담당하며,
